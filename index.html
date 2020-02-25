@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Au Bon Resto</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<!--je decoupe ma page en un header pour ma navbar et 3 sections qui representent mes cadres-->
+<header>
+    <!--J'indique mes ancres pour ma navbar pour aller d'un cadre à l'autre -->
+    <span id="nosmenus">NOS MENUS</span>
+    <a href="#" title="accueil"><img src="images/logo.png" height="80" alt="logo_restaurant"/></a>
+    <span id="reservation">RESERVATIONS</span>
+
+</header>
+
+<section id="cadreA">
+
+    <p>Au Bon Resto</p>
+    <button class="button"><span>Consulter Nos Menus</span></button>
+
+</section>
+
+<section id="cadreB">
+    <div id="titrecadre">
+        <span>NOS MENUS</span>
+    </div>
+    <div id="menus">
+        <article>
+            <p class="titremenus">ENTREES</p>
+            <p> Entrée 1............Prix € </p>
+            <p> Entrée 2............Prix € </p>
+            <p> Entrée 3............Prix € </p>
+            <p> Entrée 4............Prix € </p>
+            <p> Entrée 5............Prix € </p>
+        </article>
+
+        <article>
+            <p class="titremenus">PLATS</p>
+            <p> Plats 1............Prix € </p>
+            <p> Plats 2............Prix € </p>
+            <p> Plats 3............Prix € </p>
+            <p> Plats 4............Prix € </p>
+            <p> Plats 5............Prix € </p>
+        </article>
+
+        <article>
+            <p class="titremenus">DESSERTS</p>
+            <p> Dessert 1............Prix € </p>
+            <p> Dessert 2............Prix € </p>
+            <p> Dessert 3............Prix € </p>
+            <p> Dessert 4............Prix € </p>
+            <p> Dessert 5............Prix € </p>
+        </article>
+    </div>
+</section>
+
+<section id="cadreC">
+
+
+    <div id="cadreC1"></div>
+
+    <div id="cadreC2">
+        <form onsubmit="return false;">
+            <ul>
+                <li>
+                    <label for="nom">Nom :</label>
+                    <input id="nom" type="text" name="nom" />
+                    <p class="tooltip">il faut saisir au moins 3 caractères</p>
+                </li>
+                <li>
+                    <label for="prenom">Prénom :</label>
+                    <input id="prenom" type="text" name="prenom" />
+                    <p class="tooltip">il faut saisir au moins 3 caractères</p>
+                </li>
+                <li>
+                    <label for="telephone ">Télephone :</label>
+                    <input id="telephone " type="text" name="telephone" />
+                </li>
+                <li>
+                    <label for="email ">Email :</label>
+                    <input id="email " type="text" name="email" />
+                    <p class="tooltip">il faut saisir un numéro de téléphone ou un email</p>
+                </li>
+                <li>
+                    <label for="objet">Objet :</label>
+                    <textarea id="objet"  name="objet"></textarea>
+                    <p class="tooltip"></p>
+                </li>
+                <li>
+                    <label for="message">Message :</label>
+                    <textarea id="message"  name="message" ></textarea>
+                </li>
+                <li id="libutton">
+                    <button class="button" id="boutonformulaire"><span>ENVOYER</span></button>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+</section>
+
+<script src="script.js "></script>
+
+</body>
+</html>
